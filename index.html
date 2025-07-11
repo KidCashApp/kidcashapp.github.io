@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KidCash Support</title>
+  <style>
+    /* Basic reset */
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Oxygen, Ubuntu, Cantarell, “Open Sans”, “Helvetica Neue”, sans-serif;
+      background-color: #121212;
+      color: #FFFFFF;
+      line-height: 1.6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+    .container {
+      max-width: 480px;
+      width: 100%;
+      background: #1E1E1E;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 1.75rem;
+      text-align: center;
+    }
+    form {
+      margin-top: 1.5rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 1rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      background-color: #2A2A2A;
+      color: #FFF;
+    }
+    input:focus, textarea:focus {
+      outline: 2px solid #4A90E2;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      background-color: #4A90E2;
+      color: #FFF;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #357ABD;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Family Wallet Support</h1>
+    <form action="https://formspree.io/f/xrbknjkg" method="POST">
+      <label>
+        Your Name
+        <input type="text" name="name" placeholder="Jane Doe" required>
+      </label>
+      <label>
+        Your Email
+        <input type="email" name="_replyto" placeholder="jane@example.com" required>
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+      </label>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</body>
+</html>
